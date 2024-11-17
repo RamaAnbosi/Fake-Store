@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="./assets/css/main.css"/>
 </head>
 <body>
-    <!-- start header-->
+    <div class="loader-container">
+        <div class="loader">
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="row">
@@ -32,7 +35,7 @@
                 </nav>
                 <div class="logo">
                     <i class="fa-solid fa-heart"></i>
-                    <a href="#">Fake Store</a>
+                    <a href="#">Rama Store</a>
                     <i class="fa-solid fa-heart"></i>
                 </div>
 
@@ -45,8 +48,27 @@
 
 
     </header>
-    <!-- end header-->
+    
     <main>
+        <section class="countdown">
+            <div class="container">
+                <h2>Remaining until Ramadan <i class="fa-regular fa-moon"></i> :</h2>
+                <div class="countdown-timer">
+                    <div class="time">
+                        <span id="days"></span> Days
+                    </div>
+                    <div class="time">
+                        <span id="hours"></span> Hours
+                    </div>
+                    <div class="time">
+                        <span id="minutes"></span> Minutes
+                    </div>
+                    <div class="time">
+                        <span id="seconds"></span> Seconds
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="categories">
             <div class="contianer">
                 <div class="row">
@@ -54,16 +76,34 @@
                 </div>
             </div>
         </section>
+        
         <section class="products">
             <div class="cotainer">
                 <h2> Products </h2>
                 <div class="row">
 
                 </div>
+                <div class="pagination-container">
+                    <ul class="pagination">
+                        
+                       
+                        
+                    </ul>
+                </div>
+
             </div>
         </section>
+        
     </main>
     <footer></footer>
+    <div class="my-modal d-none">
+        <div class="img">
+            <i class="fa-solid fa-xmark close-btn"></i>
+            <i class="fa-solid fa-arrow-left left-btn"></i>
+            <img src="./assets/img/pic.jpg"/>
+            <i class="fa-solid fa-arrow-right right-btn"></i>
+        </div>
+    </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
